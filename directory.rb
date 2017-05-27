@@ -11,9 +11,17 @@ students = [
 "Joffrey Baratheon",
 "Norman Bates"
 ]
-puts "The students of Villains Academy"
-puts "-------------"
-students.each do |student|
+def print_header
+	puts "The students of Villains Academy"
+	puts "-------------"
+end 
+
+def print_names
+	students.each do |student|
     puts student
-end
+	end
+end 
+
+def print_footer(names)
 puts "Overall, we have #{students.count} great students"
+end
